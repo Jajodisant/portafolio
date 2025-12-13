@@ -3,135 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAINER PABON BORJA</title>
+    <title>Jainer Pabón | Portfolio</title>
 
-    <style>
-        body {
-            background-color: aquamarine;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        h1, h2 {
-            text-align: center;
-            color: brown;
-        }
-
-        p {
-            color: blue;
-            font-size: 1.1rem;
-            width: 80%;
-            margin: 0 auto 20px auto;
-            text-align: center;
-        }
-
-        table {
-            width: 80%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            background-color: white;
-        }
-
-        th, td {
-            border: 2px solid #444;
-            padding: 10px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #ffe6cc;
-            color: #333;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        tr:hover {
-            background-color: #ddd;
-        }
-
-        a {
-            color: blue;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>JAINER PABÓN BORJA</h1>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <span>jajodisant 💙💙💙</span>
+        </div>
 
-    <p>My name is Jainer Pabón. I'm excited about this process with Riwi.
-        I find it very difficult to speak English, but I will have to overcome that.
-        That is my challenge!</p>
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="pets.html">Pets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <h2>Portfolio</h2>
+    <!-- HERO / ABOUT -->
+    <section id="about" class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm Jainer Pabón</h1>
+            <h2>Systems Engineering Student & Backend Developer</h2>
 
-    <table>
-        <tr>
-            <th>Activity</th>
-            <th>Link</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-           <td>HV_week_1</td>
-            <td><a href="https://github.com/Jajodisant/HV_week_1">enlace</a></td>
-            <td>enable</td>
-        </tr>
-         <tr>
-           <td>HV_week_2</td>
-            <td><a href="https://github.com/Jajodisant/HV_week_2">enlace</a></td>
-            <td>enable</td>
-        </tr>
-        <tr>
-           <td>HV_week_3</td>
-            <td><a href="https://github.com/Jajodisant/HV_week_3">enlace</a></td>
-            <td>enable</td>
-        </tr>
-         <tr>
-            <td>1_ten_exercises</td>
-            <td><a href="https://github.com/Jajodisant/1_ten_exercises">enlace</a></td>
-            <td>enable</td>
-        </tr>
-        <tr>
-           <td>2_ten_exercises</td>
-            <td><a href="https://github.com/Jajodisant/2_ten_exercises">enlace</a></td>
-            <td>enable</td>
-        </tr>
-        <tr>
-           <td>EcoRide</td>
-            <td><a href="https://github.com/Jajodisant/EcoRide">enlace</a></td>
-            <td>enable</td>
-        </tr>
-        <tr>
-           <td>Domicilio</td>
-            <td><a href="https://github.com/Jajodisant/Domicilio">enlace</a></td>
-            <td>enable</td>
-        </tr>
-        <tr>
-           <td>ExcelRaincher</td>
-            <td><a href="https://github.com/Jajodisant/CrudZaso">enlace</a></td>
-            <td>enable</td>
-        </tr>
-        <tr>
-           <td>GestionVacaciones</td>
-            <td><a href="https://github.com/Jajodisant/GestionVacaciones">enlace</a></td>
-            <td>enable</td>
-        </tr>
-        <tr>
-           <td>CrudScope</td>
-            <td><a href="https://github.com/Jajodisant/CRUDScope">enlace</a></td>
-            <td>enable</td>
-        </tr>
+            <p>
+                I am a systems engineering student passionate about programming,
+                data analysis and backend development. I enjoy building projects,
+                learning new technologies and continuously improving my skills.
+            </p>
+        </div>
 
+        <div class="hero-image">
+            <img src="imgs/me.jpeg" alt="Jainer Pabón">
+        </div>
+    </section>
 
-        
-    </table>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+            <div class="card"><a href="https://github.com/Jajodisant/HV_week_1">HV Week 1</a></div>
+            <div class="card"><a href="https://github.com/Jajodisant/HV_week_2">HV Week 2</a></div>
+            <div class="card"><a href="https://github.com/Jajodisant/HV_week_3">HV Week 3</a></div>
+            <div class="card"><a href="https://github.com/Jajodisant/1_ten_exercises">1_ten_exercises</a></div>
+            <div class="card"><a href="https://github.com/Jajodisant/2_ten_exercises">2_ten_exercises</a></div>
+            <div class="card"><a href="https://github.com/Jajodisant/EcoRide">EcoRide</a></div>
+            <div class="card"><a href="https://github.com/Jajodisant/CRUDScope">CRUDScope</a></div>
+            <div class="card"><a href="https://github.com/Jajodisant/GestionVacaciones">Gestion Vacaciones</a></div>
+            <div class="card"><a href="https://github.com/Jajodisant/CrudZaso">ExcelRaincher</a></div>
+            <div class="card"><a href="https://github.com/Jajodisant/Domicilio">DomicilioApp</a></div>
+            <div class="card"><a href="https://github.com/Jajodisant/Domicilio"></a></div>
+            <div class="card"><a href="https://github.com/Jajodisant/Domicilio"></a></div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer id="contact" class="footer">
+        <h3>Contact</h3>
+
+        <div class="footer-links">
+            <a href="https://github.com/Jajodisant" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/jainer-pab%C3%B3n-3244381b5/" target="_blank">LinkedIn</a>
+            <a href="mailto:jainer.pabon2025@gmail.com">Email</a>
+        </div>
+
+        <p>© 2025 Jainer Pabón Borja</p>
+    </footer>
 
 </body>
 </html>
