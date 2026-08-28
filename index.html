@@ -1,81 +1,526 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jainer Pabón | Portfolio</title>
-
+    <title>Jainer Pabón | Backend Developer & Systems Engineer</title>
+    <meta name="description" content="Portafolio profesional de Jainer Leonardo Pabón Borja. Desarrollador Backend especializado en Java (Spring Boot), Python, Arquitecturas Escalables, Cloud y Bases de Datos.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- BACKGROUND GLOW EFFECTS -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-grid"></div>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="logo">
-            <span>jajodisant 💙💙💙</span>
+    <!-- NAVIGATION HEADER -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-code">&lt;</span>JainerPabon<span class="logo-code"> /&gt;</span>
+            </a>
+
+            <nav class="nav" id="nav-menu">
+                <a href="#about" class="nav-link active"><i class="fa-solid fa-user-tie"></i> Perfil</a>
+                <a href="#skills" class="nav-link"><i class="fa-solid fa-layer-group"></i> Habilidades</a>
+                <a href="#projects" class="nav-link"><i class="fa-solid fa-code-branch"></i> Proyectos</a>
+                <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Trayectoria</a>
+                <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contacto</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://github.com/Jajodisant" target="_blank" class="icon-btn" title="GitHub Profile">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jainerpabon" target="_blank" class="icon-btn" title="LinkedIn Profile">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
-
-        <nav class="nav">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="pets.html">Pets</a>
-            <a href="#contact">Contact</a>
-        </nav>
     </header>
 
-    <!-- HERO / ABOUT -->
-    <section id="about" class="hero">
-        <div class="hero-text">
-            <h1>Hi, I'm Jainer Pabón</h1>
-            <h2>Systems Engineering Student & Backend Developer</h2>
+    <main>
+        <!-- HERO SECTION -->
+        <section id="about" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-status">
+                        <span class="pulse-dot"></span>
+                        <span>Disponible para Nuevas Oportunidades Backend</span>
+                    </div>
 
-            <p>
-                I am a systems engineering student passionate about programming,
-                data analysis and backend development. I enjoy building projects,
-                learning new technologies and continuously improving my skills.
-            </p>
+                    <h1 class="hero-title">
+                        Hola, soy <span class="text-gradient">Jainer Pabón</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Desarrollador Backend | <span class="typewriter-text">Java (Spring Boot) & Python Specialist</span>
+                    </h2>
+
+                    <p class="hero-desc">
+                        Ingeniero de Sistemas enfocado en la construcción de <strong>APIs RESTful de alto rendimiento</strong>, 
+                        arquitecturas por capas y microservicios escalables. Especializado en persistencia avanzada con 
+                        <strong>PostgreSQL (pgvector, PostGIS)</strong>, integración de IA (Sistemas RAG), seguridad Zero-Trust RLS y despliegues con <strong>Docker & Azure</strong>.
+                    </p>
+
+                    <!-- METRICS BAR -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-num">+4</span>
+                            <span class="stat-label">Sistemas Enterprise</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">-40%</span>
+                            <span class="stat-label">Vulnerabilidades RLS</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">+35%</span>
+                            <span class="stat-label">Velocidad Consultas</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-rocket"></i> Ver Proyectos
+                        </a>
+                        <a href="https://github.com/Jajodisant" target="_blank" class="btn btn-secondary">
+                            <i class="fa-brands fa-github"></i> Explorar GitHub
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i> Contactar
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-avatar-wrapper">
+                    <div class="avatar-card">
+                        <div class="avatar-glow"></div>
+                        <div class="avatar-img-box">
+                            <img src="imgs/me.jpeg" alt="Jainer Leonardo Pabón Borja" class="avatar-img">
+                        </div>
+                        <div class="floating-tech tech-top">
+                            <i class="fa-brands fa-java" style="color: #f89820;"></i>
+                            <span>Spring Boot 3</span>
+                        </div>
+                        <div class="floating-tech tech-bottom">
+                            <i class="fa-brands fa-python" style="color: #3776ab;"></i>
+                            <span>FastAPI & AI RAG</span>
+                        </div>
+                        <div class="floating-tech tech-right">
+                            <i class="fa-brands fa-docker" style="color: #2496ed;"></i>
+                            <span>Docker & Azure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS & STACK -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-solid fa-microchip"></i> Stack Tecnológico</span>
+                    <h2 class="section-title">Habilidades & Herramientas Técnicas</h2>
+                    <p class="section-subtitle">Tecnologías aplicadas en proyectos de ingeniería bajo estándares Clean Code.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Card 1 -->
+                    <div class="skill-card">
+                        <div class="skill-icon-header">
+                            <i class="fa-solid fa-code icon-box"></i>
+                            <h3>Lenguajes</h3>
+                        </div>
+                        <p class="skill-desc">Desarrollo orientado a objetos, tipado estricto y algoritmos eficientes.</p>
+                        <div class="tag-cloud">
+                            <span class="tag"><i class="fa-brands fa-java"></i> Java 8/17/21</span>
+                            <span class="tag"><i class="fa-brands fa-python"></i> Python 3.9+</span>
+                            <span class="tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="tag"><i class="fa-solid fa-database"></i> SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="skill-card highlight">
+                        <div class="skill-icon-header">
+                            <i class="fa-solid fa-server icon-box"></i>
+                            <h3>Backend & Frameworks</h3>
+                        </div>
+                        <p class="skill-desc">Construcción de arquitecturas modulares, seguridad y microservicios.</p>
+                        <div class="tag-cloud">
+                            <span class="tag tag-accent"><i class="fa-solid fa-leaf"></i> Spring Boot 3</span>
+                            <span class="tag tag-accent"><i class="fa-solid fa-shield-halved"></i> Spring Security</span>
+                            <span class="tag"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+                            <span class="tag"><i class="fa-solid fa-network-wired"></i> RESTful APIs</span>
+                            <span class="tag"><i class="fa-solid fa-brain"></i> AI RAG (pgvector)</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="skill-card">
+                        <div class="skill-icon-header">
+                            <i class="fa-solid fa-database icon-box"></i>
+                            <h3>Bases de Datos & Big Data</h3>
+                        </div>
+                        <p class="skill-desc">Modelado relacional, geoespacial y persistencia vectorial.</p>
+                        <div class="tag-cloud">
+                            <span class="tag"><i class="fa-solid fa-database"></i> PostgreSQL 16</span>
+                            <span class="tag"><i class="fa-solid fa-map-location-dot"></i> PostGIS</span>
+                            <span class="tag"><i class="fa-solid fa-key"></i> Zero-Trust RLS</span>
+                            <span class="tag"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+                            <span class="tag"><i class="fa-solid fa-fire"></i> Apache Spark</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="skill-card">
+                        <div class="skill-icon-header">
+                            <i class="fa-solid fa-cloud icon-box"></i>
+                            <h3>Cloud & DevOps</h3>
+                        </div>
+                        <p class="skill-desc">Contenedores reproducibles, pipelines y despliegues en nube.</p>
+                        <div class="tag-cloud">
+                            <span class="tag"><i class="fa-brands fa-microsoft"></i> Microsoft Azure</span>
+                            <span class="tag"><i class="fa-brands fa-docker"></i> Docker & Compose</span>
+                            <span class="tag"><i class="fa-brands fa-git-alt"></i> Git & GitFlow</span>
+                            <span class="tag"><i class="fa-brands fa-linux"></i> Linux / Bash</span>
+                            <span class="tag"><i class="fa-solid fa-file-code"></i> Swagger/OpenAPI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS (CAR METHOD) -->
+        <section id="projects" class="section bg-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-solid fa-star"></i> Portfolio Showcase</span>
+                    <h2 class="section-title">Proyectos Destacados de Ingeniería</h2>
+                    <p class="section-subtitle">Arquitecturas backend reales documentadas con metodología CAR (Contexto, Acción y Resultado cuantificable).</p>
+                </div>
+
+                <!-- FILTER BUTTONS -->
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="java">Java & Spring Boot</button>
+                    <button class="filter-btn" data-filter="python">Python & AI</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud & Data</button>
+                </div>
+
+                <div class="projects-container">
+                    <!-- PROJECT 1: Riwi Platform -->
+                    <article class="project-card" data-category="java cloud">
+                        <div class="project-header">
+                            <div class="project-tags">
+                                <span class="badge badge-java">Java 21</span>
+                                <span class="badge badge-spring">Spring Boot 3</span>
+                                <span class="badge badge-db">PostgreSQL + pgvector</span>
+                                <span class="badge badge-docker">Docker</span>
+                                <span class="badge badge-azure">Azure</span>
+                            </div>
+                            <span class="project-year">2026</span>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-name">Riwi Internal Messaging & AI RAG Platform</h3>
+                            <p class="project-subtitle">Plataforma empresarial de comunicación con Copilot RAG y seguridad Zero-Trust RLS.</p>
+
+                            <div class="car-block">
+                                <div class="car-item">
+                                    <span class="car-label"><i class="fa-solid fa-bullseye"></i> Desafío:</span>
+                                    <p>Garantizar mensajería corporativa de alta resiliencia y consultas inteligentes sobre base de conocimiento sin fugas de datos entre departamentos.</p>
+                                </div>
+                                <div class="car-item">
+                                    <span class="car-label"><i class="fa-solid fa-gears"></i> Solución Técnica:</span>
+                                    <p>Arquitectura por capas estricta en Java 21, integración de RAG mediante <code>pgvector</code> en PostgreSQL 16 y políticas Zero-Trust <strong>Row Level Security (RLS)</strong>.</p>
+                                </div>
+                                <div class="car-item highlight-res">
+                                    <span class="car-label"><i class="fa-solid fa-chart-line"></i> Impacto Medible:</span>
+                                    <p><strong>-40%</strong> en superficie de vulnerabilidad, <strong>100%</strong> de aislamiento de datos departamental y <strong>-65%</strong> en tiempo de setup con Docker Compose y Azure.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/Jajodisant/Riwi-Co-SAS" target="_blank" class="btn btn-sm btn-primary">
+                                <i class="fa-brands fa-github"></i> Ver Código en GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2: TalentBoard ATS -->
+                    <article class="project-card" data-category="java cloud">
+                        <div class="project-header">
+                            <div class="project-tags">
+                                <span class="badge badge-java">Java 17</span>
+                                <span class="badge badge-spring">Spring Boot 3.3</span>
+                                <span class="badge badge-spring">Spring Security</span>
+                                <span class="badge badge-db">PostgreSQL</span>
+                            </div>
+                            <span class="project-year">2026</span>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-name">TalentBoard – Selection Process Management System (ATS)</h3>
+                            <p class="project-subtitle">Sistema integral de reclutamiento y tracking de postulaciones con arquitectura RBAC.</p>
+
+                            <div class="car-block">
+                                <div class="car-item">
+                                    <span class="car-label"><i class="fa-solid fa-bullseye"></i> Desafío:</span>
+                                    <p>Automatizar el flujo completo de selección de candidatos, etapas de entrevistas y perfiles con control de acceso estricto.</p>
+                                </div>
+                                <div class="car-item">
+                                    <span class="car-label"><i class="fa-solid fa-gears"></i> Solución Técnica:</span>
+                                    <p>Control de roles RBAC (Admin, Recruiter, Candidate), optimización de índices JPA/Hibernate y validación multicapa de datos con pruebas Postman.</p>
+                                </div>
+                                <div class="car-item highlight-res">
+                                    <span class="car-label"><i class="fa-solid fa-chart-line"></i> Impacto Medible:</span>
+                                    <p><strong>+35%</strong> en velocidad de consultas complejas de candidatos y <strong>0 errores</strong> de inconsistencia de estado en el pipeline de postulaciones.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/Jajodisant/TalentBoard" target="_blank" class="btn btn-sm btn-primary">
+                                <i class="fa-brands fa-github"></i> Ver Código en GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 3: Fundación Aseo API -->
+                    <article class="project-card" data-category="java cloud">
+                        <div class="project-header">
+                            <div class="project-tags">
+                                <span class="badge badge-java">Java 17</span>
+                                <span class="badge badge-spring">Spring Boot</span>
+                                <span class="badge badge-db">PostGIS</span>
+                                <span class="badge badge-docker">Docker</span>
+                            </div>
+                            <span class="project-year">2026</span>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-name">Fundación Aseo API – Georreferenciación & Rutas Óptimas</h3>
+                            <p class="project-subtitle">API RESTful geoespacial para mapeo de residuos y optimización de recolección.</p>
+
+                            <div class="car-block">
+                                <div class="car-item">
+                                    <span class="car-label"><i class="fa-solid fa-bullseye"></i> Desafío:</span>
+                                    <p>Procesar reportes ciudadanos de puntos críticos con geolocalización y calcular rutas logísticas óptimas de recolección.</p>
+                                </div>
+                                <div class="car-item">
+                                    <span class="car-label"><i class="fa-solid fa-gears"></i> Solución Técnica:</span>
+                                    <p>Integración de funciones espaciales con PostGIS, endpoints documentados con OpenAPI y provisionamiento automatizado en Docker.</p>
+                                </div>
+                                <div class="car-item highlight-res">
+                                    <span class="car-label"><i class="fa-solid fa-chart-line"></i> Impacto Medible:</span>
+                                    <p><strong>+28%</strong> de optimización en trayectorias logísticas respecto a rutas manuales, procesando coordenadas en tiempo real.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/Jajodisant/fundacion-aseo-api-finished" target="_blank" class="btn btn-sm btn-primary">
+                                <i class="fa-brands fa-github"></i> Ver Código en GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 4: ConnectX Minimax AI -->
+                    <article class="project-card" data-category="python">
+                        <div class="project-header">
+                            <div class="project-tags">
+                                <span class="badge badge-python">Python 3.9+</span>
+                                <span class="badge badge-ai">Minimax Algorithm</span>
+                                <span class="badge badge-ai">Alpha-Beta Pruning</span>
+                                <span class="badge badge-test">Unit Tests</span>
+                            </div>
+                            <span class="project-year">2026</span>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-name">ConnectX Minimax AI – Agente Táctico Inteligente</h3>
+                            <p class="project-subtitle">Motor de decisión heurístico de alto rendimiento para juegos combinatorios.</p>
+
+                            <div class="car-block">
+                                <div class="car-item">
+                                    <span class="car-label"><i class="fa-solid fa-bullseye"></i> Desafío:</span>
+                                    <p>Construir un agente automatizado capaz de tomar decisiones óptimas en tiempo real frente a jugadas complejas sin saturar CPU.</p>
+                                </div>
+                                <div class="car-item">
+                                    <span class="car-label"><i class="fa-solid fa-gears"></i> Solución Técnica:</span>
+                                    <p>Algoritmo Minimax con poda Alpha-Beta profunda, matriz heurística de control central y suite automatizada de pruebas unitarias.</p>
+                                </div>
+                                <div class="car-item highlight-res">
+                                    <span class="car-label"><i class="fa-solid fa-chart-line"></i> Impacto Medible:</span>
+                                    <p><strong>-70%</strong> en espacio de búsqueda explorado con latencia de decisión <strong>&lt; 50ms</strong> y <strong>100%</strong> de casos de bloqueo testeados.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/Jajodisant/connectx-minimax-ai" target="_blank" class="btn btn-sm btn-primary">
+                                <i class="fa-brands fa-github"></i> Ver Código en GitHub
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE & EDUCATION -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-solid fa-timeline"></i> Trayectoria</span>
+                    <h2 class="section-title">Experiencia & Educación</h2>
+                    <p class="section-subtitle">Formación intensiva y desarrollo continuo de software de clase profesional.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Desarrollador Backend & Software Engineer</h3>
+                                    <span class="timeline-company">RIWI – Clan Tompson C6</span>
+                                </div>
+                                <span class="timeline-date">Ene 2024 – Presente (Jul 2026)</span>
+                            </div>
+                            <p class="timeline-text">
+                                Entrenamiento intensivo y desarrollo de proyectos reales bajo metodologías ágiles (Scrum). Construcción de microservicios con Spring Boot, integración de bases de datos relacionales y vectoriales (pgvector), pipelines CI/CD y buenas prácticas Clean Code.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Ingeniería de Sistemas</h3>
+                                    <span class="timeline-company">Universidad Nacional Abierta y a Distancia (UNAD)</span>
+                                </div>
+                                <span class="timeline-date">Feb 2021 – Presente (Jun 2026)</span>
+                            </div>
+                            <p class="timeline-text">
+                                Especialización en arquitectura de software, modelado de sistemas lógicos de TI, optimización de algoritmos, análisis de datos con Big Data (Apache Spark/Kafka) y bases de datos relacionales y no relacionales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section bg-section">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-header">
+                        <span class="section-tag"><i class="fa-solid fa-handshake"></i> Hablemos</span>
+                        <h2 class="section-title">¿Listo para sumar valor a tu equipo de ingeniería?</h2>
+                        <p class="contact-subtitle">
+                            Estoy disponible para oportunidades laborales como <strong>Desarrollador Backend</strong> (Java / Spring Boot / Python / Cloud).
+                        </p>
+                    </div>
+
+                    <div class="contact-grid">
+                        <a href="mailto:jainer.pabon2023@gmail.com" class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Correo Electrónico</span>
+                                <span class="contact-value">jainer.pabon2023@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/jainerpabon" target="_blank" class="contact-card">
+                            <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">linkedin.com/in/jainerpabon</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Jajodisant" target="_blank" class="contact-card">
+                            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">github.com/Jajodisant</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-card static-card">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Ubicación</span>
+                                <span class="contact-value">Medellín, Colombia (Remoto / Híbrido)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Jainer Leonardo Pabón Borja. Diseñado con altos estándares de ingeniería y Clean Code.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Jajodisant" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jainerpabon" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:jainer.pabon2023@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
         </div>
-
-        <div class="hero-image">
-            <img src="imgs/me.jpeg" alt="Jainer Pabón">
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="projects-grid">
-            <div class="card"><a href="https://github.com/Jajodisant/HV_week_1">HV Week 1</a></div>
-            <div class="card"><a href="https://github.com/Jajodisant/HV_week_2">HV Week 2</a></div>
-            <div class="card"><a href="https://github.com/Jajodisant/HV_week_3">HV Week 3</a></div>
-            <div class="card"><a href="https://github.com/Jajodisant/1_ten_exercises">1_ten_exercises</a></div>
-            <div class="card"><a href="https://github.com/Jajodisant/2_ten_exercises">2_ten_exercises</a></div>
-            <div class="card"><a href="https://github.com/Jajodisant/EcoRide">EcoRide</a></div>
-            <div class="card"><a href="https://github.com/Jajodisant/CRUDScope">CRUDScope</a></div>
-            <div class="card"><a href="https://github.com/Jajodisant/GestionVacaciones">Gestion Vacaciones</a></div>
-            <div class="card"><a href="https://github.com/Jajodisant/CrudZaso">ExcelRaincher</a></div>
-            <div class="card"><a href="https://github.com/Jajodisant/Domicilio">DomicilioApp</a></div>
-            <div class="card"><a href="https://github.com/Jajodisant/new_StoreCrud">StoreCrud</a></div>
-            <div class="card"><a href="https://github.com/Crud-Activitys/CrudActivity---Mini-OS">Mini-OS</a></div>
-            <div class="card"><a href="https://github.com/monterrosag18/html_dioses">dioses</a></div>
-
-        </div>
-    </section>
-
-    <!-- FOOTER / CONTACT -->
-    <footer id="contact" class="footer">
-        <h3>Contact</h3>
-
-        <div class="footer-links">
-            <a href="https://github.com/Jajodisant" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/jainer-pab%C3%B3n-3244381b5/" target="_blank">LinkedIn</a>
-            <a href="mailto:jainer.pabon2025@gmail.com">Email</a>
-        </div>
-
-        <p>© 2025 Jainer Pabón Borja</p>
     </footer>
 
+    <!-- INTERACTIVITY SCRIPT -->
+    <script>
+        // Project Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.getAttribute('data-filter');
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Mobile Nav Toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('open');
+            });
+        }
+    </script>
 </body>
 </html>

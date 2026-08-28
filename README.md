@@ -1,44 +1,64 @@
-# 🌐 Web Portfolio — Jainer Pabón Borja
+# 🚀 Jainer Leonardo Pabón Borja — Backend Developer Portfolio
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://jajodisant.github.io/portafolio/)
+[![Portfolio Live](https://img.shields.io/badge/Portfolio-Live%20Demo-brightgreen?style=for-the-badge&logo=githubpages)](https://jajodisant.github.io/portafolio/)
+[![Java](https://img.shields.io/badge/Java-21-orange.svg?style=for-the-badge&logo=openjdk)](https://openjdk.org/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3-brightgreen.svg?style=for-the-badge&logo=springboot)](https://spring.io/projects/spring-boot)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg?style=for-the-badge&logo=python)](https://www.python.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16%20%2B%20pgvector-blue.svg?style=for-the-badge&logo=postgresql)](https://www.postgresql.org/)
+[![Azure](https://img.shields.io/badge/Microsoft%20Azure-Cloud-0078D4.svg?style=for-the-badge&logo=microsoftazure)](https://azure.microsoft.com/)
 
-Sitio web personal y portafolio interactivo desarrollado con HTML5 y CSS3 puro, enfocado en diseño responsivo, presentación de proyectos, habilidades y perfil profesional.
-
----
-
-## 📌 Contenido y Estructura
-
-- **`index.html`**: Página principal con información sobre perfil profesional, tecnologías, proyectos y formulario de contacto.
-- **`pets.html`**: Sección interactiva adicional.
-- **`style.css`**: Hoja de estilos con variables CSS, tipografías y diseño adaptativo a dispositivos móviles.
-- **`imgs/`**: Recursos multimedia, fotografías e iconos de apoyo visual.
+Portafolio web profesional e interactivo diseñado para reclutadores técnicos y sistemas ATS, destacando arquitecturas backend de alto impacto, microservicios, integración de Inteligencia Artificial (Sistemas RAG), bases de datos y buenas prácticas de ingeniería de software (Clean Architecture, Principios SOLID).
 
 ---
 
-## 🚀 Visualización Local
+## 🌟 Características Principales del Portafolio
 
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/Jajodisant/portafolio.git
-   cd portafolio
-   ```
-
-2. Abrir `index.html` en tu navegador favorito:
-   ```bash
-   # En Linux
-   xdg-open index.html
-   
-   # O usando un servidor local como Live Server / Python:
-   python3 -m http.server 8000
-   ```
+1. **Alineación Total con CV y Perfiles Profesionales:**
+   - Proyectos organizados bajo la **metodología CAR (Contexto, Acción y Resultado Medible)**.
+   - Stack tecnológico categorizado y respaldado con métricas de rendimiento y reducción de vulnerabilidades.
+2. **Diseño UI/UX Ejecutivo en Modo Oscuro:**
+   - Paleta de color premium (Azul Océano, Cian Neón, Púrpura e Índigo).
+   - Efectos de resplandor ambiental (*ambient glow*), badges interactivos y tarjetas responsivas.
+3. **Filtros Dinámicos de Proyectos:**
+   - Clasificación en tiempo real por tecnologías: *Java & Spring Boot*, *Python & AI*, *Cloud & Data*.
+4. **100% Responsivo y Ligero:**
+   - Construido con HTML5 semántico, CSS3 moderno (Variables CSS, Flexbox/Grid) y JavaScript nativo.
 
 ---
 
-## 👤 Autor
+## 📁 Proyectos Destacados Incluidos
 
-- **Jainer Pabón Borja**
-  - **GitHub:** [@Jajodisant](https://github.com/Jajodisant)
-  - **LinkedIn:** [Jainer Pabón](https://www.linkedin.com/in/jainer-pabon)
+| Proyecto | Stack Tecnológico | Impacto / Métrica CAR |
+| :--- | :--- | :--- |
+| **[Riwi Messaging & AI RAG](https://github.com/Jajodisant/Riwi-Co-SAS)** | Java 21, Spring Boot 3, PostgreSQL 16 + pgvector, Docker, Azure | **-40%** superficie de vulnerabilidad con Zero-Trust RLS y **-65%** en tiempo de aprovisionamiento. |
+| **[TalentBoard ATS](https://github.com/Jajodisant/TalentBoard)** | Java 17, Spring Boot 3.3, Spring Security, PostgreSQL, Thymeleaf | **+35%** en velocidad de consultas complejas y **0 errores** de inconsistencia en el pipeline. |
+| **[Fundación Aseo API](https://github.com/Jajodisant/fundacion-aseo-api-finished)** | Java 17, Spring Boot, PostGIS, Docker, RESTful API | **+28%** de optimización logística procesando geolocalización en tiempo real. |
+| **[ConnectX Minimax AI](https://github.com/Jajodisant/connectx-minimax-ai)** | Python 3.9+, Minimax, Poda Alpha-Beta | **-70%** espacio de búsqueda explorado con latencia **< 50ms** y 100% test coverage. |
+
+---
+
+## 🚀 Despliegue y Visualización
+
+### Visualización en Producción
+Visita el portafolio en vivo: **[https://jajodisant.github.io/portafolio/](https://jajodisant.github.io/portafolio/)**
+
+### Ejecución Local
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/Jajodisant/portafolio.git
+cd portafolio
+
+# 2. Iniciar servidor local
+python3 -m http.server 8000
+```
+
+---
+
+## 📬 Contacto Profesional
+
+- **Nombre:** Jainer Leonardo Pabón Borja
+- **Rol:** Desarrollador Backend | Ingeniero de Sistemas
+- **Ubicación:** Medellín, Colombia (Remoto / Híbrido)
+- **LinkedIn:** [linkedin.com/in/jainerpabon](https://www.linkedin.com/in/jainerpabon)
+- **GitHub:** [github.com/Jajodisant](https://github.com/Jajodisant)
+- **Email:** [jainer.pabon2023@gmail.com](mailto:jainer.pabon2023@gmail.com)
